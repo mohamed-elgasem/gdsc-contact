@@ -1,0 +1,101 @@
+body{
+    background: linear-gradient(to right,#4196cd 50%, #43aa7b);
+}
+.order .row{
+    padding: 0  1rem;
+    background-color: #182022;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    border-radius: .5rem;
+    width: 94%;
+    margin-left: 2.6%;
+}
+.order .row .text{
+    flex: 1 1 13rem;
+    margin-top: 50px;
+}
+.order .row .text::before{
+    content: '';
+    width: 3px;
+    height: 325px;
+    background-color: #8b8b8f;
+    position: absolute;
+    top: 135px;
+    left: 23rem;
+    z-index: 1;
+}
+.order .row .text div{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+}
+.order .row .text div label{
+    font-size: 30px;
+    color: #4c87ec;
+}
+.order .row .text div p{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+}
+.order .row .text div span{
+    color: #fff;
+    font-size: 14px;
+    color: #acacac;
+}
+.order .row form{
+    flex: 1 1 50rem;
+    padding: 2rem;
+}
+.order .row form label{
+    color: #4c87ec;
+    font-size: 30px;
+}
+.order .row form h4{
+    color: #fff;
+}
+.order .row p{
+    color: #acacac;
+}
+.order .row form .inputBox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.order .row form .inputBox input, .order .row form textarea{
+    padding: .6rem;
+    margin: .5rem 0;
+    font-size: 1.7rem;
+    color: #333;
+    text-transform: none;
+    border: .1rem solid rgb(0,0,0,.3);
+    border-radius: .5rem;
+    width: 100%;
+}
+.order .row form textarea{
+    width: 100%;
+    resize: none;
+    height: 10rem;
+}
+.order .row form .btn{
+    color: #fff;
+    background-color: #4c87ec;
+    padding: 8px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+@media (max-width:414px){
+    .order .row .text::before{
+        display: none;
+    }
+    .order .row .text{
+        margin-top: 0px;
+    }
+    /* .oreder .row{
+        margin-left: 100px;
+    } */
+}
